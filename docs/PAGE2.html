@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title> CREATIONS</title>
-  <link href="https://fonts.googleapis.com/css?family=Fugaz+One|Roboto+Condensed&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Oswald:300|Roboto+Condensed:300&display=swap" rel="stylesheet">
-  <link rel="icon"
-        type="image/png"
-        href="spiral.png">
-  <style>
 
+  <head>
+    <title> CREATIONS </title>
+    <link href="https://fonts.googleapis.com/css?family=Fugaz+One|Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300|Roboto+Condensed:300&display=swap" rel="stylesheet">
+    <link rel="icon"
+          type="image/png"
+          href="spiral.png">
+    <style>
     body {
-      background-color: black;
+      background-image: url("page2back.png");
+      background-size: cover;
     }
 
     .navbar {
@@ -20,44 +21,97 @@
     }
 
     .navbar a {
-      background-color: #E01000;
-      float: right;
-      color: #101a2b;
+      float: left;
+      color: white;
       text-align: center;
       padding: -7px -7px;
       text-decoration: none;
       font-size: 47px;
       font-family: 'Fugaz One', Regular ;
-      margin:7px;
+      margin:23px;
       height: 48px;
       z-index: 1;
-      margin-top:10px;
+      margin-top:-19px;
       border-top-style: none;
+      text-shadow: black 2px  1px;
     }
 
     .navbar a:hover {
-      background-color: #101a2b;
-      color:#E01000;
+      color: white;
+      text-shadow: red 1px 1px;
     }
 
     .home {
-      height:100%;
-      width:7.5%;
-      background-color:#101a2b;
-      margin:10px;
+      height:2%;
+      width:100%;
+      background-color:#bc0c54;
       position:fixed;
+      bottom: 1;
+      margin-top:20px;
       z-index: -1;
-      margin-top:-30px;
-      border-left:solid #E01000 20px;
+      border-bottom: solid #fb745c 10px;
+      margin-left: -10px;
     }
 
-    table, th, td {
-        border-collapse: separate;
-        border-spacing: 75px;
-        margin-left: 21%;
-        margin-top: 6%;
-        position: sticky;
+    #img {
+      position: fixed;
+      bottom: 0;
+      width: 300px;
+      margin-left: 37%;
+      margin-bottom:5px;
+      animation-timing-function:ease;
+      transition:0.2s;
+      background-image: url("currents.png");
+      background-position: bottom;
+      border: #ebbcdc 1px solid;
+      z-index: 1;
     }
+
+    #img:hover ~ #logo {
+      opacity: 100%;
+      margin-left:35.8%;
+    }
+
+    #img:hover {
+      margin-left:39%;
+      border-left: none;
+    }
+
+.footer2 {
+  height: 10px;
+  width:100%;
+  background-image: url("currents.png");
+  background-position: bottom;
+  float: left;
+  margin:-10px;
+  position: fixed;
+  bottom:0;
+  margin-bottom: 25px;
+  z-index: 0;
+  border: #ebbcdc 1px solid;
+}
+
+#logo {
+  position: fixed;
+  bottom: 0;
+  width: 50px;
+  margin-left: 38.5%;
+  margin-bottom:5.2px;
+  animation-timing-function:ease;
+  transition:0.2s;
+  transition: 0.2s;
+  animation-timing-function: ease-in;
+  background-color: black;
+  z-index: 0;
+  border: #ebbcdc 1px solid;
+}
+
+    table {
+      margin-left: 160px;
+      margin-top: 100px;
+       border-spacing: 40px;
+       overflow-y: scroll;
+}
 
     td {
         border: 1px solid black;
@@ -66,80 +120,91 @@
         text-align: center;
         font-size: 70px;
         font-family: 'Source sans pro';
-        text-shadow: 6px 0 white;
-        font-weight: bolder;
         transition-timing-function: ease-in;
-        border: solid red 2px;
+        border: solid white 2px;
     }
-
-    table {
-      table-layout:fixed;
-    }
-
-    .nul {
-      color: #cedae5;
-      border-color: #cedae5;
-      font-weight: lighter;
-      background-color: #b3c0cc;
-      opacity: 0.25;
-      border-color: red;
-    }
-
 
     td:hover {
-      opacity: 0.8;
-      transition-duration: 0.3s;
-      transition-timing-function: ease-out;
-      transform:scale(1.05,1.05);
-      border-color:black;
-    }
+         transition-duration: 0.3s;
+         transition-timing-function: ease-out;
+         transform:scale(1.05,1.05);
+         border-color:red;
+         border-style: double;
+         border-width: thick;
+       }
 
-    .a1 {
-      background-image: url(pandore.png);
-      color:white;
-      background-position:0px -140px;
-    }
+       .a1 {
+             background-image: url(pandore.png);
+             color:white;
+             background-position:0px -140px;
+           }
 
-    .a2 {
-      background-image: url(stgm.png);
-      color:white;
-      background-size: cover;
-      background-repeat:no-repeat;
-    }
+           .a2 {
+             background-image: url(stgm.png);
+             color:white;
+             background-size: cover;
+             background-repeat:no-repeat;
+           }
 
-    .a3 {
-      background-image: url(shaggy.png);
-      background-size: cover;
-      COLOR:WHITE;
-    }
+           .a3 {
+             background-image: url(shaggy.png);
+             background-size: cover;
+             COLOR:WHITE;
+           }
 
-  </style>
+           html {
+             height: 100%;
+           }
 
-</head>
+           body {
 
-<div class="navbar">
+           }
 
-  <a href="PAGE6.html">CONTACT</a>
-  <a id='page4'href="PAGE4.html">MAKING OF(s)</a>s
-  <a id='page3'href="PAGE3.html">AIDEZ NOU$</a>
-  <a href="PAGE2.html">CREATIONS</a>
-  <a href="PAGE1.html">A PROPOS</a>
-</div>
 
-<div class="home">
-  <a href="index.html"> <h2>index bar</h2></a>
-</div>
+           #idk {
+             width:100%;
+             overflow-y:auto;
+             position:relative;
+             height: 640px;
+           }
 
-    <table style="width:50%">
-      <tr>
-        <td class="a1">PANDORE</td>
-        <td class="a2">STGM</td>
-      </tr>
-      <tr>
-        <td class="a3">SDS</td>
-        <td class="nul">A</td>
-      </tr>
-    </table>
+    </style>
+  </head>
+
+  <body>
+
+          <nav class="footer2">
+          </nav>
+            <a href="index.html"> <img id="img" src="logo.png"><img id="logo" src="spiral.png"></a>
+
+    <div class="home">
+    <div class="navbar">
+
+      <a href="PAGE1.html">A PROPOS</a>
+      <a href="PAGE2.html">CREATIONS</a>
+      <a id='page3'href="PAGE3.html">MAKING OF(s)</a>
+      <a id='page4'href="PAGE4.html">AIDEZ NOU$</a>
+      <a href="PAGE5.html">CONTACT</a>
+
+    </div>
+
+            <div id="idk"><table id="scroll" style="width:80%">
+                <tr>
+                  <td class="a1">PANDORE</td>
+                  <td class="a2">STGM</td>
+                </tr>
+                <tr>
+                  <td class="a3">SDS</td>
+                  <td class="nul">A</td>
+                </tr>
+                  <td class=nul>hey</td>
+                  <td class="nul">hey</td>
+                </tr>
+                <td class=nul>hey</td>
+                <td class="nul">hey</td>
+                </tr>
+              </table></div>
+
 
   </body>
 

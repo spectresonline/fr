@@ -1,71 +1,131 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <title>A PROPOS</title>
-  <link href="https://fonts.googleapis.com/css?family=Fugaz+One|Roboto+Condensed&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Oswald:300|Roboto+Condensed:300&display=swap" rel="stylesheet">
-  <style>
-  body {
-    background-color: black;
-  }
+  <head>
+    <title> SPECTRES </title>
+    <link href="https://fonts.googleapis.com/css?family=Fugaz+One|Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300|Roboto+Condensed:300&display=swap" rel="stylesheet">
+    <link rel="icon"
+          type="image/png"
+          href="spiral.png">
+    <style>
+    body {
+      background-image: url("background index.png");
+      background-size: cover;
+    }
 
-  .navbar {
-    margin-left:-4px;
-    margin-right:0px;
-    border-top-style: none;
-  }
+    .navbar {
+      margin-left:-4px;
+      margin-right:0px;
+      border-top-style: none;
+    }
 
-  .navbar a {
-    background-color: #101a2b;
-    float: right;
-    color: #E01000;
-    text-align: center;
-    padding: -7px -7px;
-    text-decoration: none;
-    font-size: 47px;
-    font-family: 'Fugaz One', Regular ;
-    margin:7px;
-    height: 48px;
-    z-index: 1;
-    margin-top:10px;
-    border-top-style: none;
-  }
+    .navbar a {
+      float: left;
+      color: white;
+      text-align: center;
+      padding: -7px -7px;
+      text-decoration: none;
+      font-size: 47px;
+      font-family: 'Fugaz One', Regular ;
+      margin:23px;
+      height: 48px;
+      z-index: 1;
+      margin-top:-19px;
+      border-top-style: none;
+      text-shadow: black 2px  1px;
+    }
 
-  .navbar a:hover {
-    background-color: #E01000;
-    color:#101a2b;
-  }
+    .navbar a:hover {
+      color: white;
+      text-shadow: red 1px 1px;
+    }
 
-  .home {
-    height:100%;
-    width:7.5%;
-    background-color:#101a2b;
-    margin:10px;
-    position:fixed;
-    z-index: -1;
-    margin-top:-30px;
-    border-left:solid #E01000 20px;
-  }
+    .home {
+      height:2%;
+      width:100%;
+      background-color:#bc0c54;
+      position:fixed;
+      bottom: 1;
+      margin-top:20px;
+      z-index: -1;
+      border-bottom: solid #fb745c 10px;
+      margin-left: -10px;
+    }
 
-  </style>
-</head>
+    #img {
+      position: fixed;
+      bottom: 0;
+      width: 300px;
+      margin-left: 37%;
+      margin-bottom:5px;
+      animation-timing-function:ease;
+      transition:0.2s;
+      background-color: black;
+      border: #ebbcdc 1px solid;
+    }
 
-<body>
+    #img:hover ~ #logo {
+      opacity: 100%;
+      margin-left:35.8%;
+    }
 
-  <div class="navbar">
+    #img:hover {
+      margin-left:39%;
+      border-left: none;
+    }
 
-    <a href="PAGE6.html">CONTACT</a>
-    <a id='page4'href="PAGE4.html">MAKING OF(s)</a>s
-    <a id='page3'href="PAGE3.html">AIDEZ NOU$</a>
-    <a href="PAGE2.html">CREATIONS</a>
-    <a href="PAGE1.html">A PROPOS</a>
-  </div>
+.footer2 {
+  height: 10px;
+  width:100%;
+  background-color:black;
+  float: left;
+  margin:-10px;
+  position: fixed;
+  bottom:0;
+  margin-bottom: 25px;
+  z-index: -1;
+  border: #ebbcdc 1px solid;
+}
 
-<div class="home">
-<a href="index.html"> <h2>index bar</h2></a>
+#logo {
+  position: fixed;
+  bottom: 0;
+  width: 50px;
+  margin-left: 38.5%;
+  margin-bottom:5.2px;
+  opacity:100%;
+  animation-timing-function:ease;
+  transition:0.2s;
+  transition: 0.2s;
+  animation-timing-function: ease-in;
+  background-color: black;
+  z-index: -1;
+  border: #ebbcdc 1px solid;
+}
+
+
+    </style>
+  </head>
+
+  <body>
+
+    <div class="home">
+    <div class="navbar">
+
+      <a href="PAGE1.html">A PROPOS</a>
+      <a href="PAGE2.html">CREATIONS</a>
+      <a id='page3'href="PAGE3.html">MAKING OF(s)</a>
+      <a id='page4'href="PAGE4.html">AIDEZ NOU$</a>
+      <a href="PAGE5.html">CONTACT</a>
+    </div>
 </div>
 
-</body>
+<nav class="footer2">
+</nav>
+  <a href="index.html"> <img id="img" src="logo.png"><img id="logo" src="spiral.png"></a>
+
+
+  </body>
 
 </html>
