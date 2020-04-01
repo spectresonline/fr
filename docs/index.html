@@ -58,32 +58,37 @@
       bottom: 0;
       width: 300px;
       margin-left: 37%;
-      margin-bottom:5px;
+      margin-bottom:0px;
       animation-timing-function:ease;
       transition:0.2s;
       background-color: black;
       border: #ebbcdc 1px solid;
+      border-bottom: none;
     }
 
     #img:hover ~ #logo {
       opacity: 100%;
       margin-left:35.8%;
+      border-top: red 1px solid;
+      border-left: red 1px solid;
     }
 
     #img:hover {
       margin-left:39%;
-      border-left: none;
+      border-top: red 1px solid;
+      border-right: red 1px solid;
+      border-left:none;
     }
 
 .footer2 {
-  height: 10px;
+  height: 60px;
   width:100%;
   background-color:black;
   float: left;
   margin:-10px;
   position: fixed;
   bottom:0;
-  margin-bottom: 25px;
+  margin-bottom: -30px;
   z-index: -1;
   border: #ebbcdc 1px solid;
 }
@@ -93,7 +98,7 @@
   bottom: 0;
   width: 50px;
   margin-left: 38.5%;
-  margin-bottom:5.2px;
+  margin-bottom:0px;
   opacity:100%;
   animation-timing-function:ease;
   transition:0.2s;
@@ -102,6 +107,7 @@
   background-color: black;
   z-index: -1;
   border: #ebbcdc 1px solid;
+  border-bottom:none;
 }
 
 .pitch {
@@ -117,11 +123,20 @@
   font-variant: small-caps;
 }
 
+.updates {
+  border: white 5px double;
+  height: 450px;
+  width: 500px;
+  position: absolute;
+  margin-top:8%;
+  margin-left: 55%;
+}
+
     </style>
   </head>
 
   <body>
-
+<div class="updates"><iframe src="https://www.youtube.com/watch?v=XqIhkduBEYE"></iframe></div>
     <div class="home">
     <div class="navbar">
 
