@@ -104,36 +104,39 @@
 }
 
     table {
-      margin-left: 160px;
-      margin-top: 100px;
+      margin-left: 80px;
+      margin-top: 0px;
        border-spacing: 40px;
        overflow-y: scroll;
+       table-layout: fixed;
 }
 
     td {
         border: 1px solid black;
-        width:400px;
-        height:200px;
+        width:800px;
+        height:530px;
         text-align: center;
-        font-size: 70px;
-        font-family: 'Source sans pro';
+        font-size: 80px;
+        font-family: monospace;
+        font-style: italic;
         transition-timing-function: ease-in;
         border: solid white 2px;
+        opacity:80%;
     }
 
     td:hover {
-         transition-duration: 0.3s;
-         transition-timing-function: ease-out;
-         transform:scale(1.05,1.05);
+         transition-duration: 0.2s;
+         transition-timing-function:ease-in-out;
+         font-size:90px;
          border-color:red;
-         border-style: double;
-         border-width: thick;
+         color:red;
+         opacity: 100%;
        }
 
        .a1 {
              background-image: url(pandore.png);
              color:white;
-             background-position:0px -140px;
+             background-size: cover;
            }
 
            .a2 {
@@ -153,16 +156,21 @@
              height: 100%;
            }
 
-           body {
-
-           }
-
-
            #idk {
              width:100%;
-             overflow-y:auto;
+             overflow-x:auto;
              position:relative;
-             height: 640px;
+             height: 800px;
+           }
+
+           a {
+             text-decoration: none;
+             color:white;
+             font-size: 80px;
+           }
+
+           a:hover {
+             color:red;
            }
 
     </style>
@@ -185,18 +193,14 @@
 
     </div>
 
-            <div id="idk"><table id="scroll" style="width:80%">
+            <div id="idk"><table id="scroll" style="width:50%">
                 <tr>
                   <td class="a1">PANDORE</td>
                   <td class="a2">STGM</td>
-                </tr>
-                <tr>
                   <td class="a3">SDS</td>
                   <td class="nul">A</td>
-                </tr>
                   <td class=nul>hey</td>
                   <td class="nul">hey</td>
-                </tr>
                 <td class=nul>hey</td>
                 <td class="nul">hey</td>
                 </tr>
