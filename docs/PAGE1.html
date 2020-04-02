@@ -10,7 +10,7 @@
           href="spiral.png">
     <style>
     body {
-      background-color: black;
+      background-image: url(backtest4.png);
     }
 
     .navbar {
@@ -29,7 +29,7 @@
       font-family: 'Fugaz One', Regular ;
       margin:23px;
       height: 48px;
-      z-index: 1;
+      z-index: 5;
       margin-top:-22px;
       border-top-style: none;
       text-shadow: black 2px  1px;
@@ -57,11 +57,12 @@
       bottom: 0;
       width: 300px;
       margin-left: 37%;
-      margin-bottom:5px;
+      margin-bottom:0px;
       animation-timing-function:ease;
       transition:0.2s;
       background-color: black;
       border: #ebbcdc 1px solid;
+      border-bottom: none;
     }
 
     #img:hover ~ #logo {
@@ -75,14 +76,14 @@
     }
 
 .footer2 {
-  height: 10px;
+  height: 60px;
   width:100%;
   background-color:black;
   float: left;
   margin:-10px;
   position: fixed;
   bottom:0;
-  margin-bottom: 25px;
+  margin-bottom: -30px;
   z-index: -1;
   border: #ebbcdc 1px solid;
 }
@@ -92,18 +93,98 @@
   bottom: 0;
   width: 50px;
   margin-left: 38.5%;
-  margin-bottom:5.2px;
+  margin-bottom:0px;
   opacity:100%;
   animation-timing-function:ease;
   transition:0.2s;
-  transition: 0.2s;
   animation-timing-function: ease-in;
   background-color: black;
   z-index: -1;
   border: #ebbcdc 1px solid;
+  border-bottom:none;
 }
 
+.pitch {
+  position:absolute;
+  top:15%;
+  left:10%;
+  text-align: center;
+  font-size: 60px;
+  color:white;
+  text-shadow: white 0px 5px;
+  font-family:sans-serif;
+  font-variant: small-caps;
+  letter-spacing: 1px;
+  line-height: 100px;
+  transition: 0.2s;
+  width:80%;
+  padding:0;
+  border: 0.5px white dashed;
+}
 
+.pitch:hover {
+  text-shadow: none;
+}
+
+html {
+  height: 400%;
+  overflow: auto;
+  scrollbar-width:none;
+  scroll-behavior: smooth;
+}
+
+.slider {
+  height:100px;
+  bottom:8%;
+  margin:auto;
+  position:fixed;
+  left:45%;
+  opacity:70%;
+}
+
+.slider:hover {
+  opacity:100%;
+}
+
+h3::selection {
+  background-color: black;
+}
+
+#scroll {
+  position:absolute;
+  top:110%;
+  left:10%;
+}
+
+#who {
+  position:absolute;
+  top:130%;
+  left:10%;
+  text-align: center;
+  font-size: 30px;
+  color:white;
+  font-family:sans-serif;
+  font-variant: small-caps;
+  letter-spacing: 1px;
+  line-height: 50px;
+  transition: 0.2s;
+  width:80%;
+  z-index: -2;
+}
+
+.hey {
+  margin-top:47%;
+  left:37%;
+  position: relative;
+  z-index: -3;
+  height:100px;
+  width:300px;
+}
+
+mark {
+  background-color: black;
+  color: white;
+}
     </style>
   </head>
 
@@ -124,6 +205,13 @@
 </nav>
   <a href="index.html"> <img id="img" src="logo.png"><img id="logo" src="spiral.png"></a>
 
+  <div><h3 class="pitch">Sept étudiant.e.s Sorbonne en manque de moyens pour créer mais avec trop d'idées pour s'en empêcher ont décidé de s'associer...</h3>
+    <img class="hey"src="spiral.png">
+  </div>
+<a href="#scroll"><img class="slider" src="slide2.png"></a>
+
+<div id ="scroll"></div>
+<h3 id="who"><mark>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</mark></h3>
 
   </body>
 
