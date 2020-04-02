@@ -111,7 +111,7 @@
 }
 
 .pitch {
-  margin-top:12%;
+  margin-top:10%;
   position: absolute;
   width:12%;
   margin-left:10%;
@@ -125,20 +125,35 @@
 
 .updates {
   border: white 5px double;
-  height: 450px;
-  width: 500px;
+  height: 487px;
+  width: 520px;
   position: absolute;
   margin-top:8%;
   margin-left: 55%;
-  overflow-y: scroll;
+  overflow-x: scroll;
+  overflow-y:hidden;
+  box-sizing: content-box;
 }
+
 
 .one {
   float:left;
+  margin:0;
+  border: 10px #a11106 solid;
 }
 
 .two {
   float:right;
+  border: 10px yellow solid;
+  position: absolute;
+}
+
+mark {
+  background-color:black;
+}
+
+::-webkit-scrollbar {
+display: none;
 }
 
     </style>
@@ -146,8 +161,8 @@
 
   <body>
 <div class="updates"><iframe class="one"width="500" height="450" src="https://www.youtube.com/embed/kV03nhgPNNM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <iframe class="two"width="500" height="450" src="https://www.youtube.com/embed/wveTSv0VYJI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+  <div class="contain"><iframe class="two"width="500" height="450" src="https://www.youtube.com/embed/wveTSv0VYJI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div></div>
     <div class="home">
     <div class="navbar">
 
@@ -163,7 +178,7 @@
 </nav>
   <a href="index.html"> <img id="img" src="logo.png"><img id="logo" src="spiral.png"></a>
 
-<h3 class="pitch">Sept étudiant.e.s en manque de moyens pour créer mais avec trop d'idées pour s'en empêcher, ont décidé de s'associer...</h3>
+<h3 class="pitch">Sept étudiant.e.s Sorbonne en manque de moyens pour créer<br><br> mais avec trop d'idées pour s'en empêcher<br><br> ont décidé de s'associer...</h3>
 
   </body>
 

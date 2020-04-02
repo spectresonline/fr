@@ -105,10 +105,10 @@
 
     table {
       margin-left: 80px;
-      margin-top: 0px;
-       border-spacing: 40px;
-       overflow-y: scroll;
-       table-layout: fixed;
+      margin-top: 0%;
+      border-spacing: 40px;
+      overflow-y: scroll;
+      table-layout: fixed;
 }
 
     td {
@@ -117,8 +117,7 @@
         height:530px;
         text-align: center;
         font-size: 80px;
-        font-family: monospace;
-        font-style: italic;
+        font-family: sans-serif;
         transition-timing-function: ease-in;
         border: solid white 2px;
         opacity:80%;
@@ -173,6 +172,19 @@
              color:red;
            }
 
+           .slide {
+             height:100px;
+             margin-top:300px;
+            float:left;
+            margin-left:-100%;
+            position:fixed;
+            z-index: 1;
+           }
+
+           mark {
+             background-color: black;
+           }
+
     </style>
   </head>
 
@@ -192,6 +204,8 @@
       <a href="PAGE5.html">CONTACT</a>
 
     </div>
+
+          <img class="slide" src="slide.png">
 
             <div id="idk"><table id="scroll" style="width:50%">
                 <tr>
