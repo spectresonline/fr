@@ -124,17 +124,15 @@
 }
 
 .updates {
-  border: white 5px double;
-  height: 487px;
-  width: 520px;
+  border: red 5px double;
   position: absolute;
   margin-top:8%;
   margin-left: 55%;
   overflow-x: scroll;
   overflow-y:hidden;
-  box-sizing: content-box;
+  scrollbar-width:none;
+  width: 520px;
 }
-
 
 .one {
   float:left;
@@ -143,9 +141,15 @@
 }
 
 .two {
-  float:right;
   border: 10px white solid;
   position: absolute;
+}
+
+#three {
+  background-color: red;
+  position: fixed;
+  float:right;
+  margin:0;
 }
 
 mark {
@@ -160,9 +164,11 @@ display: none;
   </head>
 
   <body>
-<div class="updates"><iframe class="one"width="500" height="450" src="https://www.youtube.com/embed/kV03nhgPNNM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <div class="contain"><iframe class="two"width="500" height="450" src="https://www.youtube.com/embed/wveTSv0VYJI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div></div>
+<div class="updates">
+  <iframe class="one"width="500" height="450" src="https://www.youtube.com/embed/kV03nhgPNNM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="two"width="500" height="450" src="https://www.youtube.com/embed/wveTSv0VYJI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h1 id="three">hi</h1>
+</div><
     <div class="home">
     <div class="navbar">
 
