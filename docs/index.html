@@ -111,27 +111,30 @@
 }
 
 .pitch {
-  margin-top:10%;
+  margin-top:9%;
   position: absolute;
-  width:12%;
-  margin-left:10%;
-  font-size:27px;
+  width:17%;
+  margin-left:7%;
+  font-size:35px;
   color:white;
-  text-align: left;
+  text-align: center;
   font-family:sans-serif;
   font-style: italic;
   font-variant: small-caps;
 }
 
 .updates {
-  border: red 5px double;
+  border: #e0bfdc 5px double;
   position: absolute;
   margin-top:8%;
   margin-left: 55%;
-  overflow-x: scroll;
-  overflow-y:hidden;
+  overflow-x: hidden;
+  overflow-y:scroll;
   scrollbar-width:none;
   width: 520px;
+  height:490px;
+  background-color: white;
+  scroll-behavior: smooth;
 }
 
 .one {
@@ -140,16 +143,8 @@
   border: 10px white solid;
 }
 
-.two {
+#two {
   border: 10px white solid;
-  position: absolute;
-}
-
-#three {
-  background-color: red;
-  position: fixed;
-  float:right;
-  margin:0;
 }
 
 mark {
@@ -160,14 +155,35 @@ mark {
 display: none;
 }
 
+.slide1 {
+  height:60px;
+  position: sticky;
+  margin-top:-4.5%;
+  margin-left: 45%;
+  opacity:80%;
+}
+
+.slide1:hover {
+  opacity: 100%;
+}
+
+iframe {
+  opacity:90%;
+  transition: 0.2s;
+}
+
+iframe:hover {
+  opacity:100%;
+}
+
     </style>
   </head>
 
   <body>
 <div class="updates">
-  <iframe class="one"width="500" height="450" src="https://www.youtube.com/embed/kV03nhgPNNM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<iframe class="two"width="500" height="450" src="https://www.youtube.com/embed/iJJ-sQ6aXag" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<h1 id="three">hi</h1>
+ <iframe class="one"width="500" height="450" src="https://www.youtube.com/embed/ui94deJS7U0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+ </iframe><a href="#two"><img class="slide1"src="slide2.png"></a>
+<iframe id="two"width="500" height="450" src="https://www.youtube.com/embed/iJJ-sQ6aXag" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
     <div class="home">
     <div class="navbar">
@@ -175,7 +191,7 @@ display: none;
       <a href="PAGE1.html">A PROPOS</a>
       <a href="PAGE2.html">CREATIONS</a>
       <a id='page3'href="PAGE3.html">MAKING OFs</a>
-      <a id='page4'href="PAGE4.html">AIDEZ NOU$</a>
+      <a id='page4'href="PAGE4.html">AVEC NOU$</a>
       <a href="PAGE5.html">CONTACT</a>
     </div>
 </div>
